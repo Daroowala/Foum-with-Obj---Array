@@ -7,37 +7,34 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Registration Form - SMIT </h1>
-    <form id="studentForm">
-        <div class="form-group">
-            <label>First Name:</label><br>
-            <input placeholder="First Name" type="text" id="firstName" name="firstName" required><br>
-        </div>
-            <div><label>Last Name:</label><br>
-            <input placeholder="Last Name" type="text" id="lastName" name="lastName" required><br>
-        </div>
-            <div><label>CNIC:</label><br>
-            <input placeholder="CNIC" type="number" id="cnic" name="cnic" required><br>
-        </div>
-            <div><label>Phone No:</label><br>
-            <input placeholder="Phone No" type="tel" id="phone" name="phone" required><br>
-        </div>
-            <div><label>Email:</label><br>
-            <input placeholder="Email" type="email" id="email" name="email" required><br>
-        </div>
-            <div><label>Course:</label><br>
-            <select name="studentCourse" required id="stdCourse">
-                <option value="">Select a Course</option>
-                <option value="Web Devolepment">Web Devolepment</option>
-                <option value="Graphic Design">Graphic Design</option>
-                <option value="Accounting">Accountig</option>
-            </select>
-        </div>
-        <button type="submit" id="submit">Submit</button>
-
-        
-    </form>
-
+    <div class="container">
+        <h1>Registration Form - SMIT</h1>
+        <form id="studentForm">
+            <div class="form-group">
+                <label for="studentName">Name:</label>
+                <input type="text" id="studentName" name="studentName" required>
+            </div>
+            <div class="form-group">
+                <label for="studentEmail">Email:</label>
+                <input type="email" id="studentEmail" name="studentEmail" required>
+            </div>
+            <div class="form-group">
+                <label for="studentPhone">Phone:</label>
+                <input type="tel" id="studentPhone" name="studentPhone" required>
+            </div>
+            <div class="form-group">
+                <label for="studentCourse">Course:</label>
+                <select id="studentCourse" name="studentCourse" required>
+                    <option value="">Select a Course</option>
+                    <option value="Web Development">Web Development</option>
+                    <option value="Data Science">Data Science</option>
+                    <option value="Graphic Design">Graphic Design</option>
+                </select>
+            </div>
+            <button type="submit">submit</button>
+        </form>
+        <div id="message" class="message"></div>
+    </div>
     <script src="app.js"></script>
 </body>
 </html>
